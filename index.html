@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./components/user/">
-    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="js/bootstrap/bootstrap.min.js" defer></script>
     <script type="module" src="app.js" defer></script>
     <title>Facturas</title>
 </head>
 <body>
-    <user-component></user-component>
-    <products-component></products-component>
+    <div class="container">
+        <user-component></user-component>
+        <products-component></products-component>
+        <detail-component></detail-component>
+        <summary-component></summary-component>
+    </div>
 </body>
 </html>

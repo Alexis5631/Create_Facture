@@ -2,8 +2,10 @@ import { dataBase } from "../js/data.js";
 
 export function listProduct(productsComponent) {
   const productList = productsComponent.shadowRoot.getElementById('productList');
-  const codeInput = productsComponent.shadowRoot.querySelector('input[aria-label="Disabled input example"]');
-  const valueInput = productsComponent.shadowRoot.querySelector('input[value="value"]');
+  const codeInput = productsComponent.shadowRoot.querySelector('input[id="productIdInput"]');
+  const valueInput = productsComponent.shadowRoot.querySelector('input[id="unitaryValue"]');
+
+  console.log("Base de datos de productos:", dataBase); // Verificar que los productos estén cargados
 
   // Llenar el select con los productos
   dataBase.forEach(element => {
