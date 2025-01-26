@@ -62,8 +62,6 @@ class ProductsComponent extends HTMLElement {
     submitBtn.addEventListener("click", () => {
       const productId = productIdInput.value;
       const productName = productList.options[productList.selectedIndex]?.textContent;
-      
-      // Aseguramos que el precio se obtiene sin formato de moneda
       const unitaryValue = parseFloat(unitaryValueInput.value.replace("$", "").trim());
       const quantity = parseInt(quantityInput.value, 10);
 
